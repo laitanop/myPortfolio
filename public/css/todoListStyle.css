@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #b2ebf2, #80deea, #4dd0e1, #26c6da);
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.icon-container {
+  position: absolute;
+  font-size: 48px;
+  color: white;
+}
+
+/* Container */
+.container-todo-list {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1;
+}
+
+/* Header */
+.header-todo-list {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-todo-list h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Input Section */
+.todo-list-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#todo-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#btn-add-todo {
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-add-todo:hover {
+  background-color: #45a049;
+}
+
+#error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Todo List */
+#list {
+  margin-top: 20px;
+}
+
+#list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#list div:hover {
+  transform: scale(1.02);
+  background-color: #e9e9e9;
+}
+
+#list div button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#list div button:hover {
+  background-color: #d32f2f;
+}
