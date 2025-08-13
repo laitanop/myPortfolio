@@ -8,33 +8,6 @@ let projects = [
     tech: ["Javascript", "HTML", "CSS"],
     date: "2021-01-01",
   },
-  {
-    name: "Todo List in Javascript",
-    description: "A javascript todo list",
-    image: "../img/todoList.png",
-    link: "todoList.html",
-    github: "https://www.google.com",
-    tech: ["Javascript", "HTML", "CSS"],
-    date: "2021-01-01",
-  },
-  {
-    name: "Todo List in Javascript",
-    description: "A javascript todo list",
-    image: "../img/todoList.png",
-    link: "todoList.html",
-    github: "https://www.google.com",
-    tech: ["Javascript", "HTML", "CSS"],
-    date: "2021-01-01",
-  },
-  {
-    name: "Todo List in Javascript",
-    description: "A javascript todo list",
-    image: "../img/todoList.png",
-    link: "todoList.html",
-    github: "https://www.google.com",
-    tech: ["Javascript", "HTML", "CSS"],
-    date: "2021-01-01",
-  },
 ];
 
 let cardContainer = document.getElementById("card-container");
