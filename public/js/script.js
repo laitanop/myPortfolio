@@ -25,6 +25,10 @@ projects.forEach((project) => {
     <a href="${project.link}">View Project</a>
 
   `;
+
+  card.addEventListener("click", () => {
+    window.location.href = project.link;
+  });
   cardContainer.appendChild(card);
 });
 
