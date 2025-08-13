@@ -8,27 +8,45 @@ let error = document.getElementById("error");
 field.placeholder = "Enter your today task...";
 
 addButton.addEventListener("click", () => {
+  let wrapperIcons = document.createElement("div");
   let div = document.createElement("div");
-  let remove = document.createElement("button");
-  let done = document.createElement("button");
+  let remove = document.createElement("span");
+  let done = document.createElement("span");
 
+  div.className = "list-text";
+  wrapperIcons.className = "wrapper-icons";
+  remove.className = "material-icons";
   remove.innerText = "delete";
-  done.innerText = "not done ";
+  remove.style.color = "red";
+  remove.style.cursor = "pointer";
+
+  done.className = "material-icons";
+  done.innerText = "radio_button_unchecked";
+  done.style.color = "green";
+  done.style.cursor = "pointer";
 
   if (field.value === undefined || field.value === "") {
-    error.textContent = "please add a task ";
+    error.textContent = "Please add a task ";
   } else {
     div.textContent = field.value;
-    div.appendChild(done);
-    div.appendChild(remove);
-    list.appendChild(div);
+
+    wrapperIcons.appendChild(done);
+    wrapperIcons.appendChild(remove);
+
+    div.appendChild(wrapperIcons);
+
+    list.prepend(div);
+
     field.value = "";
     error.textContent = "";
+
     remove.addEventListener("click", () => {
       div.remove();
     });
+
     done.addEventListener("click", () => {
-      done.innerText = "done";
+      done.innerText = "check_circle";
+      div.className = "list-text-done";
     });
   }
 });
