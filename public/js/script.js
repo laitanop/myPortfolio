@@ -1,11 +1,19 @@
 let projects = [
   {
-    name: "Todo List in Javascript",
+    name: "Todo List",
     description: "A responsive javascript todo list",
     image: "../img/todoList.png",
     link: "todoList.html",
     github: "https://www.google.com",
-    tech: ["Javascript", "HTML", "CSS", "Material-icons"],
+    tech: ["JavaScript", "HTML", "CSS"],
+  },
+  {
+    name: "Blog Template",
+    description: "A responsive javascript blog template",
+    image: "",
+    link: "/blog-template",
+    github: "https://www.google.com",
+    tech: ["JavaScript", "HTML", "CSS", "Bootstrap", "Firebase"],
   },
 ];
 
