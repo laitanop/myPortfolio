@@ -10,6 +10,8 @@ const __dirname = path.dirname(__filename);
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
+app.use("/todo-list", express.static(path.join(__dirname, "todo-list/public")));
+
 app.use(
   "/blog-template",
   express.static(path.join(__dirname, "blog-template/public"))

@@ -3,7 +3,7 @@ let projects = [
     name: "Todo List",
     description: "A responsive javascript todo list",
     image: "../img/todoList.png",
-    link: "todoList.html",
+    link: "/todo-list",
     github: "https://www.google.com",
     tech: ["JavaScript", "HTML", "CSS"],
   },
