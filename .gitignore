@@ -1,0 +1,6 @@
+node-modules/
+# Ignore .env file
+.env
+
+# Ignore generated env.js file
+public/env.js
