@@ -12,13 +12,13 @@ const messagingSenderId = window.env.VITE_MESSAGING_SENDER_ID_FIREBASE;
 const measurementId = window.env.VITE_MEASUREMENT_ID_FIREBASE;
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyC35-oqxDmdnJ1TgKiEOrKKhFmRZUTXCI0",
+  apiKey,
   authDomain: "a-blog-template.firebaseapp.com",
   projectId: "a-blog-template",
   storageBucket: "a-blog-template.firebasestorage.app",
-  messagingSenderId: "324897912018",
-  appId: "1:324897912018:web:4640a9d450361f6287690b",
-  measurementId: "G-YGBVEG74EN",
+  messagingSenderId,
+  appId,
+  measurementId,
 };
 
 // // Initialize Firebase
